@@ -1,12 +1,18 @@
 # Rails Full-stack 3/27/2024
 
-### App Configs
+### Purpose
 
-- added RSpec
-- Model: Herb - name and watered
-- rails g model Herb name:string watered:string
-- added Herbs in rails c
-- rails g controller Herb
+This application was crafted for an instructional demo of full-stack Rails. The goal was to explore RESTful routes and understand data flow in the MVC architecture.
+
+The notes below describe the step-by-step build process so the students could model the workflow.
+
+### App Configurations and Setup
+
+- added RSpec gem
+- generated model: `rails g model Herb name:string watered:string`
+- ran the migration
+- added a few herbs directly in the Rails console
+- generated controller: `rails g controller Herb`
 
 ### RESTful Routes
 
@@ -15,7 +21,7 @@
 - controller - active record query for all the herbs
 - route - get request, added alias, and root to index
 - view - iterated over the active record array to display herb names
-- erbs tags with = display content to the browser, no equal sign don't display
+- notes - erbs tags with `=` display content to the browser, no equal sign don't display
 
 ### Show
 
