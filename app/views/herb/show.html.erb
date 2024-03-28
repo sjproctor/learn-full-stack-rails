@@ -1,0 +1,8 @@
+<h3>Herb Details</h3>
+
+<p>Name of the herb: <%= @herb.name %></p>
+<p>Has the herb been watered: <%= @herb.watered %></p>
+
+<p><%= link_to 'Edit Herb', edit_herb_path(@herb) %></p>
+<p><%= link_to 'Delete Herb', delete_herb_path(@herb), data: { "turbo-method": :delete, turbo_confirm: "Are you sure you want to delete #{@herb.name}?" } %></p>
+<p><%= link_to 'Home', herbs_path %></p>
